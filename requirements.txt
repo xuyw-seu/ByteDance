@@ -1,0 +1,40 @@
+# ByteDance Project Dependencies
+# Last updated: 2025-12-08
+
+# Python version requirement
+python>=3.8
+
+# Deep learning framework
+pytorch>=1.10.0
+
+# Network traffic processing
+scapy>=2.4.5
+
+# Data processing and analysis
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# HDF5 file handling
+h5py>=3.3.0
+
+# Machine learning
+scikit-learn>=1.0.0
+
+# Transformers and attention mechanisms
+transformers>=4.12.0
+
+# Data visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# JSON processing
+jsonlines>=3.0.0
+
+# Utility libraries
+tqdm>=4.62.0
+argparse>=1.4.0
+os-sys>=2.1.0
+
+# Additional libraries for time series analysis
+statsmodels>=0.13.0
