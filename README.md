@@ -114,8 +114,7 @@ If you use ByteDance in your research, please cite our paper:
 ## Contact
 
 For questions or feedback, please contact:
-- Yuwei Xu: [xu.yuwei@example.com]
-- Zhiyuan Liang: [liang.zhiyuan@example.com]
+- Yuwei Xu: [xuyw@seu.edu.cn]
 
 ## Acknowledgments
 
