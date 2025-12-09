@@ -67,7 +67,7 @@ See requirements.txt
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/ByteDance.git
+git clone https://github.com/xuyw-seu/ByteDance.git
 cd ByteDance
 
 # Install dependencies
