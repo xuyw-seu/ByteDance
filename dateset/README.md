@@ -1,6 +1,5 @@
 # 数据集详情
 
-## Table 3
 Details of four network traffic datasets.
 
 | Dataset | Classes |
@@ -12,11 +11,9 @@ Details of four network traffic datasets.
 
 ## 数据集链接
 
-## 数据集链接
-
 | 数据集名称 | 下载链接 |
 |------------|----------|
 | CSTNET-TLS1.3 | [CSTNET-TLS1.3 数据集](https://drive.google.com/drive/folders/1BUo5TMRuXNvTqNYy0RLeHk4l4Q3BuzSk) |
 | MOBILE-APP | [MOBILE-APP 数据集](https://ieee-dataport.org/documents/5g-mobile-app-traffic-traces-chalmers-2023) |
-| TOR | [TOR 数据集](https://example.com/tor) |
-| TROJAN-VPN | [TROJAN-VPN 数据集](https://example.com/trojan-vpn) |
+| TOR | [TOR 数据集]() |
+| TROJAN-VPN | [TROJAN-VPN 数据集]() |
