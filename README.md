@@ -86,6 +86,8 @@ ByteDance has been evaluated on four datasets:
 | TOR | 163, alibaba, aliyun, amazon, apple, baidu, bilibili, bing, cdc, csdn, deepl, epicgames, github, icloud, jd, msn, office, openai, qq, sci-encodedirect, stackoverflow, tencent, weibo, yahoo, zhihu |
 | TROJAN-VPN | amazon, facebook, google, nytimes, reddit, twitter, wiki, youtube, weibo |
 
+See dateset/README.md for more details.
+
 ## Key Contributions
 
 1. **Two-Stage Byte Feature Extraction (TBFE)**: Accurately captures byte features by screening packet bytes and employing local attention and transformer encoder.
