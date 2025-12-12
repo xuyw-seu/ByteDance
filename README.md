@@ -45,9 +45,6 @@ ByteDance consists of two main components:
 ByteDance/
 ├── dateset/                   # Dataset information and processing scripts
 ├── image/                     # Images for documentation
-│   ├── Architecture.png       # System architecture diagram
-│   ├── Performance1.png       # Experimental performance results 1
-│   └── Performance2.png       # Experimental performance results 2
 ├── model/                     # Model implementations
 │   ├── ByteDance.py           # Main ByteDance model
 │   └── ByteTransformer.py     # Byte Transformer implementation
