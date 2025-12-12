@@ -29,7 +29,7 @@ We compare ByteDance with nine state-of-the-art ETC schemes. Experimental result
 ## System Architecture
 
 ByteDance consists of two main components:
-
+![System Architecture](image/Architecture.png)
 ### 1. Two-Stage Byte Feature Extraction (TBFE)
 - **Packet Byte Screening**: Filters packet bytes based on protocol format and distribution
 - **Local Attention Module**: Enhances local feature extraction
@@ -44,6 +44,10 @@ ByteDance consists of two main components:
 ```
 ByteDance/
 ├── dateset/                   # Dataset information and processing scripts
+├── image/                     # Images for documentation
+│   ├── Architecture.png       # System architecture diagram
+│   ├── Performance1.png       # Experimental performance results 1
+│   └── Performance2.png       # Experimental performance results 2
 ├── model/                     # Model implementations
 │   ├── ByteDance.py           # Main ByteDance model
 │   └── ByteTransformer.py     # Byte Transformer implementation
@@ -95,6 +99,14 @@ See ' dateset/README.md ' for more details.
 2. **Prototype-Network-based Dynamic Gradient Compensation (PDGC)**: Mitigates B-view suppression by assigning weights to gradients and enhancing gradient propagation with PCE loss.
 
 3. **Superior Performance**: Achieves state-of-the-art results on four datasets with efficient model design.
+
+## Classification Performance
+
+ByteDance has been compared with nine state-of-the-art ETC schemes. All schemes were evaluated using their optimal hyperparameters following the same comparison methodology as in previous studies. The experimental results strongly demonstrate ByteDance's exceptional performance in encrypted traffic classification tasks.
+
+ByteDance achieved the best performance across four different encrypted traffic datasets. First, it performed outstandingly on all four datasets, achieving the highest accuracy, surpassing the suboptimal baseline by at least 0.35% and up to 3.27%. Second, ByteDance also showed significant improvements in other metrics, demonstrating better classification balance across all traffic categories compared to other schemes. It achieved the highest TPR on three datasets, slightly lower than ET-BERT on the TLS1.3 dataset. ByteDance obtained the lowest FPR values on all four datasets, with differences ranging from 0.05% to 0.34% compared to its closest competitors. ByteDance's FTF score exceeded 95% on all four datasets, outperforming all baseline schemes. Its F1<sub>m</sub> score was the highest on three datasets, trailing only ET-BERT by 0.07% on the TLS1.3 dataset.
+![Performance1](image/Performance1.png)
+![Performance2](image/Performance2.png)
 
 ## Citation
 
