@@ -56,9 +56,11 @@ ByteDance/
 │   ├── process_json/          # JSON data processing
 │   ├── time_sequence_analysis/ # Time sequence analysis
 │   └── use_tools/             # Utility tools and scripts
-├── BD_train.py                # Main training script
+├── BD_train.py                # Bytedance training script
+├── train.py                   # training script
 ├── README.md                  # This file
 └── requirements.txt           # Project dependencies
+
 ```
 
 ## Dependencies
@@ -73,6 +75,39 @@ cd ByteDance
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+## Data Processing
+
+Data preprocessing is executed by running the shell script in `dataset/`.
+
+```bash
+# Use default paths:
+# rawdata dir:   ./rawdata
+# output npz:    ./dataset/bytedance_input.npz
+bash dataset/process_rawdata.sh
+
+# Or specify custom paths:
+bash dataset/process_rawdata.sh <rawdata_dir> <output_npz_path>
+
+# Full-parameter version:
+bash dataset/process_rawdata.sh <rawdata_dir> <output_npz_path> <max_packet_num> <byte_dim> <min_packets>
+```
+
+## Model Training Logic
+
+Training is executed by `train.py` .
+
+```bash
+python train.py \
+  --data dataset/bytedance_input.npz \
+  --output-dir checkpoints \
+  --device cpu \
+  --batch-size 64 \
+  --num-epochs 30 \
+  --learning-rate 1e-3 \
+  --train-ratio 0.8 \
+  --dev-ratio 0.1
 ```
 
 
